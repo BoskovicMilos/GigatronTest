@@ -10,10 +10,10 @@ import java.time.Duration;
 
 public class PopUpPage extends  BasePage{
 
-    @FindBy(css = ".mf-modal-iframe.mf-modal-iframe-middle.mf-animate.mf-loaded")
+   /* @FindBy(css = ".mf-modal-iframe.mf-modal-iframe-middle.mf-animate.mf-loaded")
     WebElement iframe;
     @FindBy ( css = ".mf-modal-container .mf-modal-close")
-    WebElement close;
+    WebElement close;*/
 
     @FindBy( css =  ".btn.secondary")
     WebElement buttonPrihvati;
@@ -24,14 +24,14 @@ public class PopUpPage extends  BasePage{
         PageFactory.initElements(driver, this);
 
     }
-    public void clickOnPopup()
+    /*public void clickOnPopup()
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOf(iframe));
         driver.switchTo().frame(iframe);
         wait.until(ExpectedConditions.visibilityOf(close)).click();
 
-    }
+    }*/
 
     public void clickPrihvati()
     {
